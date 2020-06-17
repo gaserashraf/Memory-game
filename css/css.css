@@ -1,0 +1,369 @@
+body
+{
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+}
+@media (min-width:1110px) 
+ {
+    .body
+    {
+        background-image: url(../images/wall.jpg);
+        background-size: 2100px 1300px;
+        height: 752px;
+        margin-top: -20px;
+        
+    }
+    .body.game-over
+    {
+        opacity: .3;      
+    }
+    /*game over*/
+    .gameOver
+    {
+        position: absolute;
+        width: 800px;
+        height: 375px;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 3s ;
+    }
+    .gameOver img
+    {
+        position: absolute;
+        width: 100%;
+        top: 200px;
+        left:380px;
+    }
+    .gameOver span
+    {
+        position: absolute;
+        top: 157px;
+        left: 578px;
+        width: 500px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #444;
+        
+    }
+    .gameOver button
+    {
+        position: absolute;
+        top: 517px;
+        left: 726px;
+        border: none;
+        border-radius: 3px;
+        background: teal;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 15px 25px;
+        margin-bottom: 70px;
+        cursor: pointer;
+    }
+    .gameOver.hide
+    {
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    /*game over*/
+
+    /*win*/
+    .Win
+    {
+        position: absolute;
+        width: 800px;
+        height: 375px;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 3s ;
+    }
+    .Win img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 200px;
+        left:345px;
+    }
+    .Win button
+    {
+        position: absolute;
+        top: 567px;
+        left: 660px;
+        border: none;
+        border-radius: 3px;
+        background: teal;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 15px 25px;
+        margin-bottom: 70px;
+        cursor: pointer;
+    }
+    .Win.hide
+    {
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    /*win*/
+    .clear
+    {
+        clear: both;
+    }
+    #wrong
+    {
+        color: #84a9ac;
+    }
+    .game
+    {
+        padding-top: 50px;
+        font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        width:60%;
+        margin: 20px auto;
+        
+    }
+    .game .info
+    {
+        border: 2px solid #84a9ac;
+        padding: 5px 10px;
+        color: #e7dfd5;
+    }
+    .game .name-game
+    {
+        float: left;
+    }
+    .game .catagory
+    {
+        float: right;
+    }
+
+
+    .imgs
+    {
+        width: 90%;
+        height: 550px;
+        margin: 50px auto;
+    }
+    .imgs .img
+    {
+        width: 15%;
+        background: rgb(167, 165, 165);
+        margin-left: 20px;
+        margin-bottom: 20px;
+        float: left;
+        background: #84a9ac;
+        position: relative;
+        width: 128px;
+        height: 128px;
+        border: 2px solid #444;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform .5s;
+        transform-style: preserve-3d;
+    }
+    .imgs .img:hover
+    {
+
+        background: #204051;
+    
+    }
+    .imgs img
+    {
+        position: absolute;
+        width: 90%;
+        top: 8px;
+        left: 8px;
+        
+    }
+    .imgs img.hide
+    {
+        
+        opacity: 0;
+    }
+    .click
+    {
+        
+        transform:rotateY(180deg);
+    }
+    .imgs .clicked
+    {
+        cursor: default;
+    }
+    .imgs .clicked:hover
+    {
+        
+        background: #84a9ac;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*for mobile*/
+@media only screen 
+and (min-width : 10px) 
+and (max-width : 1099px)
+ {
+    .body
+    {
+            height: 2131px;
+        background-image: url(../images/wall.jpg);
+         /* Background image is centered vertically and horizontally at all times */
+         background-repeat:no-repeat;
+         -webkit-background-size:cover;
+         -moz-background-size:cover;
+         -o-background-size:cover;
+         background-size:cover;
+         background-position:center;
+         margin-top: -20px;
+         width: 1208px;
+        
+    }
+    .body.game-over
+    {
+        opacity: .3;      
+    }
+  
+   
+    /*win*/
+    .Win
+    {
+        position: absolute;
+        width: 1000px;
+        height: 500px;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 3s ;
+    }
+    .Win img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 700px;
+        left: 88px;
+    }
+    .Win button
+    {
+        position: absolute;
+        top: 1200px;
+        left: 400px;
+        border: none;
+        border-radius: 3px;
+        background: teal;
+        color: white;
+        text-transform: uppercase;
+        font-size: 5vw;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 15px 25px;
+        margin-bottom: 70px;
+        cursor: pointer;
+    }
+    .Win.hide
+    {
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    /*win*/
+    .clear
+    {
+        clear: both;
+    }
+    #wrong
+    {
+        color: #84a9ac;
+    }
+    .game
+    {
+        padding-top: 50px;
+        font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        width:95%;
+        margin: 20px auto;
+        
+    }
+    .game .info
+    {
+        border: 2px solid #84a9ac;
+        padding: 15px 30px;
+        color: #e7dfd5;
+        font-size: 7vw;
+    }
+    .game .name-game
+    {
+        float: left;
+    }
+    .game .catagory
+    {
+        float: right;
+    }
+
+
+    .imgs
+    {
+        width: 100%;
+        height: 1108px;
+        margin: 200px auto;
+    }
+    .imgs .img
+    {
+        width: 20%;
+        background: rgb(167, 165, 165);
+        margin-left: 20px;
+        margin-bottom: 20px;
+        float: left;
+        background: #84a9ac;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border: 2px solid #444;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform .5s;
+        transform-style: preserve-3d;
+    }
+    .imgs .img:hover
+    {
+
+        background: #204051;
+    
+    }
+    .imgs img
+    {
+        position: absolute;
+        width: 90%;
+        top: 8px;
+        left: 8px;
+    }
+    .click
+    {
+        
+        transform:rotateY(180deg);
+    }
+    .imgs img.hide
+    {
+        opacity: 0;
+    }
+    .imgs .clicked
+    {
+        cursor: default;
+    }
+    .imgs .clicked:hover
+    {
+        
+        background: #84a9ac;
+    }
+}
